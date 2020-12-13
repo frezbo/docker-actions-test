@@ -18,7 +18,6 @@ jobs:
         with:
           images: ghcr.io/frezbo/docker-actions-test
           tag-sha: true # add git short SHA as Docker tag
-          tag-edge: false
           tag-latest: false
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1

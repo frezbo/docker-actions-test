@@ -13,7 +13,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Docker meta
-        id: docker_meta
+        id: meta
         uses: crazy-max/ghaction-docker-meta@v2.4.0
         with:
           images: ghcr.io/frezbo/docker-actions-test
@@ -32,7 +32,6 @@ jobs:
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GHCR_ACCESS_TOKEN }}
       - name: Build and push
-        id: docker_build
         uses: docker/bake-action@v1
         with:
           files: |

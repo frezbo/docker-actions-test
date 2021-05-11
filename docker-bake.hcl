@@ -1,8 +1,8 @@
-target "ghaction-docker-meta" {}
+target "docker-metadata-action" {}
 
 target "build" {
-  inherits = ["ghaction-docker-meta"]
-  context = "./"
+  inherits   = ["docker-metadata-action"]
+  context    = "./"
   dockerfile = "Dockerfile"
   platforms = [
     "linux/amd64",

@@ -33,7 +33,7 @@ jobs:
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GHCR_ACCESS_TOKEN }}
       - name: Build and push
-        uses: docker/bake-action@v1.4.1
+        uses: docker/bake-action@v1.4.2
         with:
           files: |
             ./docker-bake.hcl

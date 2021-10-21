@@ -1,4 +1,4 @@
-FROM --platform=${BUILDPLATFORM:-linux/amd64} golang@sha256:28ef9a17b8cefebb3cf12d09fed9f2a6d5dae791ab2d83800e35a8b4662dffcf AS builder
+FROM --platform=${BUILDPLATFORM:-linux/amd64} golang@sha256:124966f5d54a41317ee81ccfe5f849d4f0deef4ed3c5c32c20be855c51c15027 AS builder
 
 ARG TARGETPLATFORM
 ARG BUILDPLATFORM
